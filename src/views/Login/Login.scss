@@ -1,0 +1,17 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: steelblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+      width: 500px;
+      border: 1px solid white;
+      padding-top: 20px;
+      h2{
+        text-align: center;
+      }
+
+    }
+}
