@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Login.scss'
 import { Button, Form, Input } from 'antd';
@@ -8,6 +8,12 @@ import { $login } from '../../api/adminApi';
 export default function Login() {
     // 导航
     let navigate = useNavigate()
+    useEffect(() => {
+        // 判断是否已登录成功
+        if (sessionStorage.getItem('token')) {
+            navigate('/layout')
+        }
+    }, [])
     //  通知框状态
     let [notiMsg, setNotiMsg] = useState({ type: '', description: '' })
     // 表单

@@ -1,0 +1,31 @@
+.layout{
+    width: 100vw;
+    height: 100vh;
+    .demo-logo-vertical{
+        height: 32px;
+        margin: 16px;
+        background: rgba(255, 255, 255, 0.3);
+        color: aliceblue;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .right{
+        .header{
+            display: flex;
+            justify-content: space-between;
+            .button{
+                &:hover{
+                    color:rgb(64, 97, 164, 0.496);
+                }
+            }
+            .menu{
+                padding: 0 10px;
+            }
+        }
+
+    }
+    .content{
+        padding: 5px;
+    }
+}
